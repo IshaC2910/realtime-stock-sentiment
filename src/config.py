@@ -1,5 +1,10 @@
 import os
 from dotenv import load_dotenv
+# src/config.py
+import streamlit as st
+
+NEWS_API_KEY = st.secrets["api_keys"]["newsapi"]
+TWITTER_BEARER = st.secrets["api_keys"]["twitter_bearer"]
 
 load_dotenv()
 
